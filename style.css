@@ -22,37 +22,42 @@
 .menu-item{
     display: block;
     width:200px;
-    height: 35px;
+    height: 0px;
     background-color: rgb(213, 184, 252);
-    color: #fff;
-    font-size: 15px;
+    color:transparent;
+    font-size: 0px;
     text-align: center;
     line-height: 35px;
     margin-top: 2px;
     text-decoration: none;
     user-select: none;
-}
-
-.menu1{
-    display: none;
-}
-
-.menu2{
-    display: none;
+    transition: 0.3s;
 }
 
 #check1{
     display: none;
 }
-
-#check1:checked ~ .menu1{
-    display: block;
-}
-
 #check2{
     display: none;
 }
+#check3{
+    display:none;
+}
 
-#check2:checked ~ .menu2{
-    display: block;
+#check1:checked ~ .menu1 > .menu-item{
+    /* display: block; */
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+}
+#check2:checked ~ .menu2 > .menu-item{
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+}
+
+#check3:checked ~ .menu3 > .menu-item{
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
 }
