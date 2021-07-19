@@ -1,0 +1,58 @@
+.wrapper{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin-top: 5px;
+    background-color: rgb(137, 101, 235);
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    user-select: none;
+}
+
+.menu-item{
+    display: block;
+    width:200px;
+    height: 35px;
+    background-color: rgb(213, 184, 252);
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    line-height: 35px;
+    margin-top: 2px;
+    text-decoration: none;
+    user-select: none;
+}
+
+.menu1{
+    display: none;
+}
+
+.menu2{
+    display: none;
+}
+
+#check1{
+    display: none;
+}
+
+#check1:checked ~ .menu1{
+    display: block;
+}
+
+#check2{
+    display: none;
+}
+
+#check2:checked ~ .menu2{
+    display: block;
+}
