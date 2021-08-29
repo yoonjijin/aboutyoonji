@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            background-color: #ddd;
+            width: 100vh;
+            height: 80vh;
+            display: grid;
+            text-align: center;
+            grid-template-colums: 1fr 1fr;
+            grid-template-areas:
+            "box1 box1"
+            "box2 box3"
+            "box4 box4";
+        }
+        .section1{
+            background-color: #333;
+            padding: 10px;
+            grid-area: box1;
+        }
+        header{
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            grid-area: box1;
+        }
+        nav{
+            background-color: #ddd;
+            color: #333;
+            padding: 5px;
+            margin: 10px;
+        }
+        section{
+            background-color: #999;
+            padding: 10px;
+            grid-area: box2;
+            margin: 10px;
+        }
+        article{
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            margin: 5px;
+        }
+        .article_nav{
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            margin: 5px;
+        }
+        aside{
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            margin: 5px;
+            grid-area: box3;
+        }
+        footer{
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            margin: 5px;
+            grid-area: box4;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <section class="section1">
+            <header>header</header>
+            <nav>nav</nav>
+        </section>
+        <section>
+            section
+            <article>article</article>
+            <article>article</article>
+            <article>article</article>
+            <div class="article_nav">div</div>
+        </section>
+        <aside>aside</aside>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

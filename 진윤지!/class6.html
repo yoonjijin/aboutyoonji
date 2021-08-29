@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Animation</title>
+    <style>
+        header{
+            /*background-color: rgb(85, 107, 47);*/
+            background: linear-gradient(120deg,#006400,#B2FA5C);
+            color: ghostwhite;
+            font-size: 30px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        main{
+            display: flex;
+            width: 800px;
+            overflow-x: scroll;
+        }
+
+        main img{
+            width: 200px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width: 768px){
+            main{
+                flex-direction: column;
+                width: 300px;
+                height: 500px;
+                overflow-y: scroll;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            My Favorite Plants
+        </header>
+        <main>
+            <img src="img/P_img1.png" alt="plant1">
+            <img src="img/P_img2.png" alt="plant2">
+            <img src="img/P_img3.png" alt="plant3">
+            <img src="img/P_img4.png" alt="plant4">
+            <img src="img/P_img5.png" alt="plant5">
+            <img src="img/P_img6.png" alt="plant6">
+        </main>
+    </div>
+</body>
+</html>

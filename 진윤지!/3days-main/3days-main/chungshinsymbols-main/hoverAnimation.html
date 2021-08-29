@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover animation</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .button1,
+        .button2,
+        .button3,
+        .button4{
+            width:100px;
+            height:60px;
+            margin: 6px;
+            background-color: rgb(196, 224, 196);
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            line-height: 60px;
+            border-radius: 20px;
+            transition: 1s;
+        }
+
+        .button1:hover{
+            height: 300px;
+            background-color: rgb(215, 186, 228);
+        }
+
+        .button2:hover{
+            height: 200px;
+            width: 120px;
+            background-color: rgb(215, 186, 228);
+            color: rgb(196, 224, 196);
+        }
+
+        .button3:hover{
+            border-radius: 50%;
+            height: 200px;
+            color:rgb(215, 186, 228);
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="button1">Home</div>
+        <div class="button2">About</div>
+        <div class="button3">Profile</div>
+        <div class="button4">Contact</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "section1 section2 section3"
+    "main main main"
+    "footer footer footer";
+}
+header {
+    position: sticky;
+    top: 0px;
+    line-height: 100px;
+    background-color: antiquewhite;
+    grid-area: header;
+}
+nav {
+    position: sticky;
+    top: 100px;
+    background-color: beige;
+    grid-area: nav;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    font-weight: 800;
+}
+
+nav ul li:hover {
+    color: cadetblue;
+}
+
+nav ul li:active {
+    color: rgb(95, 101, 160);
+}
+.section1 {
+    background-color: #ded;
+    grid-area: section1;
+}
+
+.section2 {
+    background-color: #dde;
+    grid-area: section2;
+}
+
+.section3 {
+    background-color: #ede;
+    grid-area: section3;
+}
+
+.section1,
+.section2,
+.section3 {
+    padding: 10px;
+}
+
+.section1 img,
+.section2 img,
+.section3 img {
+    width: 100%;
+    border-radius: 20%;
+}
+
+main {
+    background-color: #ddd;
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    padding: 10px;
+}
+
+footer {
+    background-color: #ccc;
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "nav"
+    "section1"
+    "section2"
+    "section3"
+    "main"
+    "footer";
+    }
+}

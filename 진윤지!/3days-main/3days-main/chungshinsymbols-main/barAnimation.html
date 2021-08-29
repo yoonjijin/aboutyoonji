@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bar animation</title>
+    <style>
+        .container{
+            width: 800px;
+            height: 35px;
+            background-color: rgb(196, 224, 196);
+            border-radius: 20px;
+        }
+        .movingBar {
+            width: 100px;
+            height: 35px;
+            background-color: rgb(215, 186, 228);
+            border-radius: 20px;
+            animation: barAni 1.5s ease-in-out infinite alternate-reverse;
+        }
+        @keyframes barAni {
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(700px)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="movingBar"></div>
+    </div>
+</body>
+</html>

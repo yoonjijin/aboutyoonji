@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            padding: 10px 100px;
+            background-color: #ddd;
+            border-bottom: 1px solid silver;
+        }
+        nav ul{
+            padding: 10px 100px;
+            display: flex;
+            justify-content: center;
+            background-color: #ddd;
+        }
+        nav ul li{
+            text-align: center;
+            flex: 1;
+            background-color: #f2f2f2;
+            padding: 10px;
+            list-style: none;
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+        nav ul li a{
+            padding: 10px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        nav ul li:hover{
+            background-color: #E0F2F7;
+            transform: scale(1.1);
+        }
+        nav ul li:active{
+            background-color:lightblue;
+        }
+        main{
+            display: flex;
+        }
+        .main-box{
+            padding: 50px 30px;
+            flex:2;
+        }
+        main span{
+            padding: 50px 30px;
+            flex:1
+        }
+        main span img{
+            width: 80%;
+            filter: invert(88%) sepia(14%) saturate(959%) hue-rotate(161deg) brightness(96%) contrast(99%);
+        }
+        .headers{
+            display: flex;
+            background-color: #E0F2F7;
+            padding: 30px;
+        }
+        div ul li{
+            list-style: none;
+            flex: 1;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>Yoonji JIN</header>
+    <nav>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">MENU</a></li>
+            <li><a href="">WHERE</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="main-box">
+            <h1>Down with the state</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, laboriosam.</p>
+        </div>
+        <span><img src="img/family-together.svg" alt=""></span>
+    </main>
+    <div class="headers">
+        <ul>
+            <li><h2>Lorem ipsum dolor sit.</h2></li>
+            <li><h2>Lorem, ipsum dolor.</h2></li>
+            <li><h2>Lorem ipsum dolor sit amet consectetur.</h2></li>
+        </ul>
+    </div>
+</body>
+</html>
